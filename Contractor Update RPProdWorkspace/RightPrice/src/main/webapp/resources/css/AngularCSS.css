@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+.ng-border,.ng-invalid-ng-invalid{
+	border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.ng-valid,.ng-valid-ng-valid{
+	border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+     
+}
+.error{
+	color:#a94442;
+}
+
+.ng-chkBorder{
+	 outline: 2px solid #c00;
+}
+
+.invalid-return{
+	color:#a94442;
+	font-weight: bold;
+}

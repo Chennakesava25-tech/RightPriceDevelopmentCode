@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://wacstg.myeviden.com">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:X509Data>
+                <ds:X509Certificate>
+MIID6TCCAtGgAwIBAgIUJ9SLom7Hfd/gc3UWmgnqy5E1pNUwDQYJKoZIhvcNAQELBQAwaDELMAkGA1UEBhMCUEwxDDAKBgNVBAcMA0JZRDEPMA0GA1UECgwGRVZJREVOMRAwDgYDVQQLDAdEQVMtV0FDMSgwJgYDVQQDDB9FdmlkZW4gUm9vdCBDQSAyMDIzIGZvciBXQUMgU1NPMB4XDTIzMDQxMTExMjYzNVoXDTMzMDQwODExMjYzNVowWjELMAkGA1UEBhMCUEwxDzANBgNVBAoMBkVWSURFTjERMA8GA1UECwwIREFTMi1XQUMxJzAlBgNVBAMMHnNzby0yMDIzXzIwMzMud2FjLm15ZXZpZGVuLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOjDrs6iSmFBp2ImWSKvAMKjmcS6jts1oLHw09QR137q+NP+MHwsm+SQnK1wG9cSjWJct+nuKJDQQynvReDn0M/oJGx0+L0khZo8Cclji3LRNekB3+/g1d78PDznG2f0tVQ8qCtholrRbd/mMYsBU1wl4kBCaCZ0zvPw57dsXxpP1JW2bQLkX6NLNzcLo4p5pbSRKX5gxJIFf0aswDcoZMy2PC3213zc2QkjETbdTTGrYeDjFwpOGHbpnLWSKoG/oqsofbm9fgCjY8sJqZHlj22KMzME5QfLS9I4jqHY0VaURGatyHZhj+ibsXLOtuJDK8c0+2EOio8fNkV4IzpkKRECAwEAAaOBmDCBlTAJBgNVHRMEAjAAMAsGA1UdDwQEAwIEsDAxBgNVHSUEKjAoBggrBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMDBggrBgEFBQcDCDBIBgNVHREEQTA/ghN3YWNzdGcubXlldmlkZW4uY29tghN3YWN0c3QubXlldmlkZW4uY29tghN3YWNkZXYubXlldmlkZW4uY29tMA0GCSqGSIb3DQEBCwUAA4IBAQAZt6Dcd/fh/CGk2QvvVpiI+cPvj04lDw1MOJOyRTzJJ748bb/aBb+kOBZ6q2li91rUaNEOBap1cAgu1JqnS6W9JuU9wKPQjtdp1nFAGcGhAdPAd1OMnQMdqY9/ri3f8QcrV/fOIUsEeoTHbL+p7LikPHNNP4APKZUA4TZRVCXDK2y+LMXeWwpWX0AI1hfDAhNk0GAEpzghHitkeEEnlzEzGME9bR9zzrikVyNYZ2PptHfpeAPs4MY+h15XM9OlEKUAJjkTUrIV0dpDGen7P+R7nLETc8IZSeVF7BpE2LHXLVpGH7YlUlYWj5MeANcgzR5c1etA5vQLHsQ0QiuS8+tO
+                </ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"     Location="https://wacstg.myeviden.com/sso_cond2fa_2023/SingleSignOnService"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://wacstg.myeviden.com/sso_cond2fa_2023/SingleSignOnService"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://wacstg.myeviden.com/portal/logout_confirm.jsp"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://wacstg.myeviden.com/portal/logout_confirm.jsp"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     validUntil="2019-07-07T08:45:10Z"
+                     cacheDuration="PT604800S"
+                     entityID="rightprice-uat.myatos-syntel.net">
+    <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                     Location="https://rightprice-uat.myatos-syntel.net/RightPrice
+                                     index="1" />
+        
+    </md:SPSSODescriptor>
+</md:EntityDescriptor> 

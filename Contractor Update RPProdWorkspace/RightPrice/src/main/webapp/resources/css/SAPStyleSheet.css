@@ -1,0 +1,2599 @@
+body {
+	background-color: #FFFFFF;
+	font-size: 12px !important;
+}
+
+.divEmptyHalf {
+	height: 0.3125em;
+}
+
+.divEmpty {
+	height: 0.625em;
+}
+
+.divEmptyTwice {
+	height: 0.9375em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyThrice {
+	height: 1.2375em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatFirst {
+	height: 7.8575em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatSecond {
+	height: 7.8775em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatThrice {
+	height: 7.9775em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatFourth {
+	height: 9.4000em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatFifth {
+	height: 12.4000em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatSixth {
+	height: 13.4000em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyWhatSeventh {
+	height: 13.8575em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.divEmptyThriceWidth {
+		display:inline-block; 
+       margin-left: 190px; 0;
+}
+.icon-direction
+{
+	font-size:20px
+}
+/* .form-control{
+	border-top: 0;
+    border-right: 0;
+    border-left: 0;    
+    border-radius: 0;
+    box-shadow: none;
+} */
+
+
+/* .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: transparent !important;
+ } */
+			
+/* Popover */
+  .popover {
+      border: 0px solid #ff6e2b;
+  }
+  /* Popover Header */
+  .popover-title {
+      background-color:#ff6e2b; 
+      color: #FFFFFF; 
+      text-align:center;
+  }
+  /* Popover Body */
+  .popover-content {
+      background-color: transparant;
+      color: black;
+  }
+  
+/*  LandingPage classes  Start */
+.bgColor {
+	/* background-color: #0b8cb8; */
+}
+#divHeader{
+	background: #ff6d43; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #ff6d43 , #ff6d43); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ff6d43, #ff6d43); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ff6d43, #ff6d43); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ff6d43, #ff6d43); /* Standard syntax (must be last) */
+}
+ .panel-info {
+    border-color: #002d3c;
+    background-color: #FFFFFF;
+} 
+
+.panel-info > .panel-heading {
+    color: inherit;
+    background-color: #002d3c;
+   
+}
+
+.atos-panel-heading {
+    padding-bottom: 10px ;
+ 	padding-top: 10px;
+ 	padding-left: 12px ;
+ 	padding-right: 3.5px;
+    background-color: rgb(230,230,230);
+}
+
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #cccccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+	border-left-color: #555;
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+@media ( max-width : 480px) {
+	.paddingLeft {
+		padding-left: 12px;
+	}
+}
+
+.headerWelcomeLable {
+	display: inline;
+}
+
+.headerTeextcolor {
+	color: white;
+}
+
+.navbar {
+	background-color: inherit;
+}
+
+.navbar-default {
+	border-color: transparent transparent transparent transparent;
+} 
+
+.marginTopAuto {
+	margin-top: auto;
+	font-size: 32px !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	padding: 10px 5px 5px 5px !important;
+}
+
+a.navbar-brand.navbarColor { /*home*/
+	color: white;
+	padding: 10px 5px 5px 8px !important;
+}
+
+.navbar {
+	min-height: 45px;
+}
+
+.navbar-brand {
+	padding: 5px 5px 5px 5px !important;
+}
+
+.navbar-toggle {
+	padding: 5px 5px !important;
+	margin-top: 10px !important;
+	margin-bottom: 5px !important;
+}
+
+.navbar-brand {
+	height: 45px !important;
+}
+
+.navbar-default .navbar-nav>.open>a {
+	background-color:#002d3c !important;
+	color: white !important;
+}
+
+a.dropdown-toggle:hover {
+	background-color:#002d3c !important;
+	color: white !important;
+}
+
+
+li>a:hover {
+	background-color:#002d3c !important;
+	color: white !important;
+}
+
+ #parentNavBarDiv a {
+	background-color: inherit;
+	font-size: 16px;
+} 
+
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover {
+	background-color:#002d3c !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.dropdown-menu>li>a {
+	color: inherit;
+}
+
+.headerMenuItemsImgSize{
+	width:30px;
+	height:30px;
+}
+
+/*  LandingPage classes  Finish */
+
+/* Common bootstrap responsive media query*/
+@media only screen and (min-width : 3841px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 55em;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 20rem;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 20rem;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+} 
+
+
+@media only screen and (min-width : 2561px) and (max-width : 3840px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 39em;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 20rem;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 20rem;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+} 
+
+@media only screen and (min-width : 1921px) and (max-width : 2560px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 28em;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 120px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 120px;		
+	} 
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+} 
+
+@media only screen and (min-width : 1601px) and (max-width : 1920px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 22em;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 140px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 140px;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+} 
+
+ @media only screen and (min-width : 1441px) and (max-width : 1600px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 223px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 120px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 120px;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+} 
+
+@media only screen and (min-width : 1281px) and (max-width : 1440px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 185px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 100px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 100px;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+}
+
+/* @media only screen and (max-width : 1280px) {
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 185px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 120px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 120px;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	
+} */
+
+
+@media only screen and (min-width : 1025px) and (max-width : 1280px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 185px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 120px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 120px;		
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	/* .footer{
+		min-height:92px;
+	} */
+	.respLogOut{
+		display:inline;
+	}
+}
+
+/* @media only screen and (max-width : 1024px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 233px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 100px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 100px;
+	}
+	.tdminWidth55{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+	
+} */
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+	body {
+		margin-bottom: 102px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 0px;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	#divHomePage{
+		height: 139px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 95px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 95px;
+    	/* margin-bottom: 95px; */
+	}
+	.tdminWidth55	
+	{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+		
+}
+
+/* @media only screen and (max-width : 768px) {
+	body {
+		margin-bottom: 60px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+	.divInnerPanel {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 15px !important;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 188px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 188px;
+	}
+	.spanIconAlighnTop {
+		top: 10px;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+	}
+	#divHomePage{
+		height: 139px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 120px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 120px;
+	}
+	.tdminWidth55
+	{
+		width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+	
+} */
+
+/* other than desktop and large screens*/
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+	body {
+		margin-bottom: 60px;
+	}
+	.textAlignRight {
+		text-align: left;
+	}
+	.divInnerPanel {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 15px !important;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 100px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 0px;
+	}
+	.spanIconAlighnTop {
+		top: 1px;
+	}
+	#divHomePage{
+		height: 88px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 50px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.tdminWidth55{
+		min-width : 55px;
+	}
+	.respLogOut{
+		display:inline;
+	}
+	
+}
+
+/* @media only screen and (max-width : 480px) {
+	.textAlignRight {
+		text-align: left;
+	}
+	.divInnerPanel {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 15px !important;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 100px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 0px;
+	}
+	.spanIconAlighnTop {
+		top: 1px;
+	}
+	#divHomePage{
+		height: 67px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 50px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 7px;
+		margin-bottom: 50px;
+	}
+	.tdminWidth55{
+		min-width : 55px;
+	}
+} */
+
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+	body {
+		margin-bottom: 40px;
+	}
+	.textAlignRight {
+		text-align: left;
+	}
+	.divInnerPanel {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 15px !important;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 100px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 0px;
+	}
+	.spanIconAlighnTop {
+		top: 1px;
+	}
+	#divHomePage{
+		height: 67px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 50px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 7px;
+		margin-bottom: 50px;
+	}
+	.tdminWidth55{
+		min-width : 55px;
+	}
+	.respLogOut{
+		display:block;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+	body {
+		margin-bottom: 20px;
+	}
+	.textAlignRight {
+		text-align: left;
+	}
+	.divInnerPanel {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.divPaddingLeftZero {
+		padding-left: 15px !important;
+	}
+	.tdMinWidthFirstColResp {
+		min-width: 100px;
+	}
+	.tdClinrtGiftEmptyResp {
+		min-width: 0px;
+	}
+	.spanIconAlighnTop {
+		top: 1px;
+	}
+	#divHomePage{
+		height: 58px;
+	}
+	.divHomepageFirstRow
+	{
+		margin-top: 50px;
+	}
+	.divHomepageSecRow
+	{
+		margin-top: 7px;
+		margin-bottom: 50px;
+	}
+	.tdminWidth55{
+		min-width : 55px;
+	}
+	.ulHomePage{
+	font-size: 15px;
+	}
+	.respLogOut{
+		display:block;
+	}
+}
+@media ( min-width : 768px) {
+	.form-inline .form-control {
+	   /*  background-color: #dfe9f2; */
+		width: 100%;
+	}
+}
+/* Common bootstrap responsive media query*/
+
+/* Common css start */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+label {
+	display: block;
+	width: x;
+	height: y;
+	text-align: left;
+}
+/* Common css stop */
+
+/* Car Details Add page CSS Start*/
+.marginBottom5px {
+	margin-bottom: 10px !important;
+}
+.divDownloadImg{
+	padding-top: 5px !important;
+	font-weight: bolder;
+	font-size: larger;
+	text-decoration: underline;
+}
+/* Car Details Add page CSS Start*/
+
+/* Car Service Details Start*/
+/* #pnlItems.panel {
+    background-color: #f1f1f1;
+} */
+.panel-default {
+	border-color: #868484;
+}
+table.clsTable td {
+	text-align: Center;
+}
+#tBodyRateCardDetails,#tBodyRateCardDetails th{
+	text-align: Left;
+}
+.firstColLeftAlign{
+	text-align: Left !important;
+}
+.table-bordered,.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th
+	{
+	border: 1px solid black !important;
+	margin-left:0%;
+	text-align: left;
+}
+
+.btnCenter
+{
+	margin:auto;
+	display:block;
+}
+
+/* Car Service Details End*/
+/*Transaction:TollParkingandExpenses Start*/
+.pnlHide {
+	display: none;
+}
+
+/*Transaction:TollParkingandExpenses End*/
+
+/* Modal dialog start*/
+.bootstrap-dialog.type-primary .modal-header {
+	background-color:#ff6e2b !important;
+}
+
+/* Modal dialog start*/
+
+/* DriverDetailUpdate Start*/
+.anchorTrancColor {
+	background-color: transparent !important;
+}
+
+.iconFontSize {
+	font-size: 28px;
+}
+
+.divParentIcon {
+	padding-top: 2px;
+	text-align: left;
+}
+
+.divPaddingLeftZero {
+	padding-left: 0px;
+}
+
+/* DriverDetailUpdate End*/
+
+/* DriverDetailAdd Start*/
+.has-feedback .form-control {
+	padding-right: initial;
+}
+
+/* DriverDetailUpdate End*/
+
+/* Client Visit request form add Start*/
+.panelHeadingStyle {
+	color: white !important; 
+	background-color: #002d3c !important;
+	background: #002d3c; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #002d3c , #002d3c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #002d3c, #002d3c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #002d3c, #002d3c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #002d3c , #002d3c); /* Standard syntax (must be last) */
+	font-size: medium;
+}
+
+.borderless td,.borderless th {
+	border: none !important;
+	/*padding: 0rem 0.3rem 0rem 0.3rem !important;*/
+}
+
+.tblBottomMargin {
+	margin-bottom: 0px;
+}
+
+.bodyBGImage {
+	background-image: url('Support/Images/RequestForm.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/* Client Visit request form add End*/
+
+/* Client Visit View request form add Start*/
+.textAlignCenter {
+	text-align: center !important;
+}
+
+.width30 {
+	width: 30%;
+}
+
+.margingRightChkBx {
+	margin-right: 2px !important;
+}
+
+.cellStyleCenter {
+	text-align: center !important;
+}
+
+#parentHelpDiv a {
+	font-size: 14px;
+	color: RGB(0,0,238);
+	text-decoration: underline;
+}
+
+/* Client Visit View request form add End*/
+.btnSpace {
+	margin-right: 10px;
+}
+
+/* Travel Raise Request Start*/
+.tdMinWidth100 {
+	min-width: 100px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth115 {
+	min-width: 115px;
+}
+
+.tdMinWidth145 {
+	min-width: 145px;
+}
+
+.tdMinWidth215 {
+	min-width: 215px;
+}
+
+.basicAnchor {
+	color: black;
+	text-decoration: underline;
+}
+
+.tdMinWidth20 {
+	min-width: 20px;
+}
+
+.tdMinWidth110 {
+	min-width: 110px; 
+	padding-left: 7px !important;
+}
+
+.tdMinWidth50 {
+	min-width: 50px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth60 {
+	min-width: 60px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth85 {
+	min-width: 85px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth120 {
+	min-width: 120px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth67 {
+	min-width: 67px;
+	padding-left: 7px !important;
+}
+
+.tdMinWidth65 {
+	min-width: 65px;
+	padding-left: 7px !important;
+}
+.tdMinWidth55 {
+	min-width: 55px;
+	padding-left: 7px !important;
+}
+.tdMinWidth165 {
+	min-width: 165px;
+	padding-left: 7px !important;
+}
+.tdMinWidth130 {
+	min-width: 130px;
+	padding-left: 7px !important;
+}
+
+.fuHeightAuto{
+	height: auto;
+}
+
+/* Travel Raise Request End*/
+
+/* Admin AsignCar for Client Vist and Daily Duty start*/
+
+.tdMinWidthAssignCarForCvDd82 {
+	min-width: 82px !important;
+	padding-left: 7px !important;
+}
+
+/* Admin AsignCar for Client Vist and Daily Duty end*/
+
+
+.divTblMIS {
+	height: 400px !important;
+	overflow-y: scroll;
+}
+
+.cvExpCostComment {
+	color: #a94442;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.textUnderline {
+	color: #a94442;
+	text-decoration: underline;
+}
+
+.tdMinWidth188 {
+	min-width: 188px;
+}
+
+.tdMinWidth89 {
+	min-width: 89px;
+}
+
+.tdMinWidth186 {
+	min-width: 186px;
+}
+
+.tdMinWidth116 {
+	min-width: 116px;
+}
+
+.tdMinWidth125 {
+	min-width: 125px;
+}
+
+.tdMinWidth119 {
+	min-width: 119px;
+}
+
+.tdMinWidth60 {
+	min-width: 60px;
+}
+
+.tdMinWidth85 {
+	min-width: 85px;
+}
+
+.tdMinWidth92 {
+	min-width: 92px;
+}
+
+.tdMinWidth80 {
+	min-width: 80px;
+}
+
+.tdMinWidth68 {
+	min-width: 68px;
+}
+
+.tdPaddingRight {
+	padding-right: 28px !important;
+}
+
+.textAlignRightNormal {
+	text-align: right;
+}
+
+/* Login Page Start*/
+.LoginFontSize {
+	font-size: 12px !important;
+	font-family: Arial Narrow !important;
+}
+
+/* Login Page End*/
+
+/* Complete Travel Request continued ""ActualTrAVELuPDATE.jsp start*/
+.tdMinWidth105 {
+	min-width: 105px;
+}
+
+.tdMinWidth230 {
+	min-width: 230px;
+}
+.tdMinWidth250 {
+	min-width: 245px;
+}
+.chkbxVertAlign{
+    margin-top: 10px !important;
+}
+
+.tdMinWidth93 {
+	min-width: 93px;
+}
+/* Complete Travel Request continued ""ActualTrAVELuPDATE.jsp end*/
+
+/*Car Assignment start*/
+.tdMinWidth70 {
+	min-width: 70px;
+}
+
+.tdMinWidth73 {
+	min-width: 73px;
+}
+
+.tdMinWidth170 {
+	min-width: 170px;
+}
+
+.tdMinWidth136 {
+	min-width: 136px !important;
+}
+
+.tdMinWidth105 {
+	min-width: 105px !important;
+}
+
+#tblCarAssign select
+{
+	padding-left: 4px;
+	padding-right: 4px;
+} 
+#tblCarAssign input 
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/*Car Assignment end*/
+
+/*Change Car Assignment start*/
+
+#tblCarAssignChange select
+{
+	padding-left: 4px;
+	padding-right: 4px;
+} 
+#tblCarAssignChange input 
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*Change Car Assignment end*/
+
+/* Raise Stationary Rquest Start*/
+
+.cbxAlignRight {
+	text-align: left;
+}
+
+.inputFontBold {
+     font-weight: bold;
+} 
+
+.paddingLableTextZero {
+     padding-right: 0px;
+     padding-left: 0px;
+} 
+
+.ddlWidth{
+	width : 100%;
+	height : 110px ! important;
+}
+
+.addRemoveBtnFont {
+	font-size: 11px ! important;	
+}
+
+.addRemoveBtnPadding {
+     padding-right: 8px ! important;
+     padding-left: 8px ! important;
+}
+
+.tdMinWidth390{
+	 min-width : 390px ;
+	 padding-left: 7px;	 
+}
+
+.tdminWidth70{
+	min-width : 70px;
+}
+
+.tdMinWidth500 {
+    min-width: 500px;
+}
+
+.addRemoveBtnPadding20{
+    padding-top: 20px;
+ }
+ 
+ #itemAddDetails.panel-group{
+ 	margin-bottom: 0px !important;
+ 	margin-top: 20px;
+ }
+ 
+ #frqUsedItem.panel-group{
+ 	margin-bottom: 0px !important;
+ }
+ 
+ .lableMargin15{
+ 	margin-left: -15px ! important;
+ }
+ 
+/*  #frqUsedItem.panel-group{
+	margin-bottom: 0px !important;
+ } */
+ 
+
+/* Raise Stationary Rquest End*/
+
+/* Stationary Admin Screen Start*/
+
+.tdMinWidth335 {
+    min-width: 335px;
+}
+
+#itemOrderDetails.panel-group{
+ 	margin-bottom: 0px !important;
+ }
+
+.tdMinWidth80 {
+    min-width: 80px;
+}
+
+/* Stationary Admin Screen End*/
+
+/* Stationary InterLocation Transfer Screen Start*/
+
+.tdMinWidth350 {
+    min-width: 350px;
+    padding-left: 7px;
+}
+
+/* Stationary InterLocation Transfer Screen End*/
+
+/* Stationary PO Entry Screen  Start */
+
+.tdMinWidth635 {
+    min-width: 635px;
+    padding-left: 7px;
+}
+
+/* .tdminWidth55{
+	min-width : 55px;
+}
+ */
+
+/* Stationary PO Entry Screen End*/
+
+/* Stationary Approver Screen Start*/
+tbody,thead{
+	font-size:12px !important;
+}
+.tdMinWidth430 {
+    min-width: 430px;
+}
+
+#approverOrderDtl.panel-group{
+ 	margin-bottom: 0px !important;
+ } 
+ 
+/* Stationary Approver Screen End*/
+
+/* Stationary Report Screen Start*/
+
+#requestViewTbl.table{
+ 	margin-bottom: 0px !important;
+ } 
+
+/* Stationary Report Screen End*/
+
+
+/* Stationary Stock Updated Screen Start*/
+.tdMinWidth300 {
+    min-width: 300px;
+}
+
+.tdMinWidth70 {
+    min-width: 70px;
+}
+
+
+
+/* Stationary Stock Update End*/
+
+
+
+/*UserRole Screen Start */
+.btnWidth{
+	width : 78px;	
+}
+
+.rowHeight100{
+    height: 100px;
+}
+.rowHeight500{
+    height: 500px;
+}
+/*UserRole Screen End */
+
+/* Updated Home page CSS Start*/
+.homePageImgSize{
+	width:80px;
+	height:80px;
+}
+
+.divParentImg{
+	text-align: center; 
+	padding:0px 50px 0px 50px;
+}
+
+.homePageImgIconFont
+{
+	font-size: x-large;
+    font-weight: bold;
+}
+.divHomePageIconFont{
+	margin-top: 0px;
+}
+
+#divHomePage{
+	/* height: 233px; */
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../Images/HomepageHeader.png");
+	/* min-height:234px; */
+}
+.ulHomePage{
+	width: 100%;
+    font-size: 20px;
+    webkit-box-shadow: rgba(0,0,0,0.20)2px 2px 10px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.20) 2px 2px 10px 8px;
+	box-shadow: rgba(0,0,0,0.20) 2px 2px 10px 8px;
+}
+.footer{
+	height: auto !important;
+}
+/* .divHomepageFirstRow 
+{
+	margin-top: 25%;
+}
+.divHomepageSecRow
+{
+	margin-top: 25%;
+	margin-bottom: 25%;
+} */
+/* Updated Home page CSS End*/
+
+
+/* Role MGMt page CSS Start*/
+.btnWidth79px
+{
+	width:79px;
+}
+/* Role MGMt page CSS End*/
+
+/* Travel report Que Start*/
+.tdWordBreak
+{
+	word-break: break-all; 
+}
+/* Travel report Que End*/
+
+
+/*Gate Pass : Gate Pass issunace Screen*/
+#imgEmployeePhoto.img-thumbnail
+{
+	border: 1px solid black;	
+}
+/**/
+/*for Right Price Portal Start*/
+/* All master screen table start*/
+
+/*.table-Height{
+	height:140px;
+	overflow:auto;
+} */
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color:#ffebe6;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #ffebe6;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #ffebe6;
+}
+
+.table-striped-tower > tbody > tr {
+  background-color: #ffebe6;
+}
+
+.table-striped-tower-total > td{
+  background-color: #FDF5E6;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+  background-color: #ff6d43;
+  color: white;
+  text-align: left;
+} 
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+/*All master screen table  end  */
+/* Riprice All Pannel heading start*/
+.DownArrowColor {
+	color:  #000000;
+}
+
+/* Riprice All Pannel heading end*/
+
+/*All Mandatory fields start */
+.required-Field:after {
+    color: #e32;
+    content:'*';
+}
+/*All Mandatory fields end */
+/* For input and select Start*/
+input.ng-invalid,
+textarea.ng-invalid,
+select.ng-invalid {
+    background-color:  #ffebe6;
+}
+/* For input and select End*/
+/*for checkbox Start */ 
+.verticalAlignMiddle{
+	vertical-align: middle;
+}
+/*for checkbox End */
+ 
+/* .headcol {
+  position:absolute;
+	width:16%;
+	Height:17%;
+	left: 1.35%;
+	background-color:lightgray;
+    }
+ .tableMarginLeft{
+	margin-left: 16%;
+ }    */
+    
+ /*Slide Pannel Start */   
+    .slide-panel {
+    position: relative;
+}
+.slide-panel-content {
+    position: fixed;
+    right: -600px;
+    width: 25%;
+    transition: all 0.5s ease;
+    z-index: 9;
+    top: 130px; 
+}
+
+.slide-panel-content ul {
+        margin: 0;
+        padding: 0;
+}
+
+.slide-panel-content ul li {
+        list-style-type: none;
+}
+
+.slide-panel-content ul li a {
+    font-family: 'Lato', sans-serif;
+    background: #072037;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 15px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #ffffff;  
+    opacity:0.9;
+}
+
+/* .slide-panel-content ul li a:hover {
+       	text-decoration: none;
+   		background: #a71313;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+} */
+
+
+.slide-panel-tab {
+    background: #072037;
+    color: hsla(100, 100%, 100%, 1.0);
+    padding:12.5px 12.5px;
+    display: block;
+    position: fixed;
+    top: 130px;
+    right: 0px;
+    transition: all 0.5s ease;
+    display: inline-block;
+    border: none;
+    z-index: 9;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #ffffff; 
+    opacity:0.9;
+}
+.hideCbx {
+    display: none;
+}
+input[type="checkbox"]:checked + label + .slide-panel-content {
+    right: 0;
+}
+input[type="checkbox"]:checked ~ label {
+    right:25%;
+}
+
+input[type="checkbox"]:checked ~ label .glyphicon {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg);
+}
+.fixedHeader
+{
+	 position:absolute;
+	
+}
+
+
+
+/* DealCreation Page Start*/
+
+
+   
+  /*********************************************************************/
+  
+  .tblDealCre  > thead > tr:first-child  
+  {
+		height: 50px;
+		/* background-color: #0e416f; */
+		background-color: #ff6d43;
+  }
+  .thWidth22Per
+  {
+	width: 11% !important; /* testing*/
+  }
+
+.thWidth15Per
+  {
+	width: 11%  !important;
+  }
+ .thWidth15PerSum
+  {
+	width: 20%  !important;
+  }
+
+.thWidth8Per
+  {
+	width: 6% !important /* testing*/
+  }
+.thWidth4Per
+  {
+	width: 4%;
+  }
+  .thWidth2Per
+  {
+	width: 2%;
+  }
+
+  .tblDealCre > tbody > tr > td,
+  .tblDealCre > tbody > tr > th,
+  .tblDealCre > tfoot > tr > td,
+  .tblDealCre > tfoot > tr > th,
+  .tblDealCre > thead > tr > td,
+  .tblDealCre > thead > tr > th 
+  {
+    border: none;
+    vertical-align: middle;
+  }
+
+.tblDealCre > thead > tr > th.thBorder
+  {
+  	border-right: 1px solid gray !important;
+  	color: white;
+  	font-size: 14px;
+  }
+
+.tblDealCre > thead > tr > th.thColor
+  {
+  	color: white;
+  	font-size: 14px;
+  }
+   
+ .tblDealCre  > thead > tr:nth-child(2)
+ {
+ 	background-color: black;
+ 	color: white;
+ 	text-align: center;
+ } 
+ .tblDealCre .sectionHeading
+ {
+ 	background-color: #ff6d43;
+ 	color: white;
+ }
+ .tblDealCre .sectionWiseHeading
+ {
+ 	background-color: #ff6d43;
+ 	color: white;
+ 	text-align: center;
+ }
+ 
+ .tblDealCre> tbody > tr > td.colSection
+ {
+ 	background-color:#ffc299; 	
+ 	border-right: 1px solid gray;
+ 	border-bottom: 1px solid black !important;
+ }
+ 
+  .tblDealCre .rowSubTotal, .tblDealCre .rowSubTotal .form-control
+ {
+ 	background-color: #e5e5e5;
+ 	color:red;
+ 	font-weight: bold;
+ } 
+  .tblDealCre > tbody > tr > td.colRightSection
+ {
+ 	border-bottom: 1px solid black !important;
+ 	background-color: #fff;
+ }
+ 
+  .tblDealCre  >  tbody > tr > td.colRightSection .form-control
+ {
+ 	color: #ff6d43;
+ 	font-weight: bold;
+ }
+ 
+ .tblDealCre .btn 
+ {
+ 	padding: 4px 5px;
+ 	border-radius: 20px;
+ } 
+  .tblDealCre .btn-default
+  {
+  	border-color: transparent;
+  }
+.tblDealCre .btn:active,
+.tblDealCre .btn:focus,
+.tblDealCre .btn.active 
+{
+	background-image: none;
+  	outline: 0;
+  	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+ 
+ .tblDealCre > thead > tr > th > a
+  {
+  	color:white;  	
+  	font-size: 16px;
+  	font-weight: bold;
+  	background-color: #ff6d43;  	
+  }
+/* .ancBtnWidthSum
+ {
+ 	width:106px; 	
+ } */
+ .tblDealCre > thead > tr > th > a:active,
+ .tblDealCre > thead > tr > th > a:hover,
+ .tblDealCre > thead > tr > th > a[tabindex]:focus 
+ {
+	color:#ff6d43;
+	text-decoration: underline;
+	background-color: white;
+ }
+ 
+ .padLeft
+ {
+ 	padding-left:13px !important;
+ } 
+ 
+ .marginLft
+ {
+ margin-left:20px;
+ width:370px;
+ }
+ 
+ .tblDealCre .form-control
+ {
+ 	padding: 2px 2px;
+ 	font-size: 12px;
+ 	height: 22px;
+ 	text-align: center;
+ 	color: black;
+ }  
+ 
+ .tblDealCre .colSection .form-control
+ {
+ 	text-align: left;
+ }
+ 
+ .tblDealCre>tbody>tr>td>input[type="text"],
+ .tblDealCre>tfoot>tr>td>input[type="text"] {
+ 	 background-color:transparent !important;
+ 	border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+ }
+ 
+ 
+.tblDealCre > tbody + tbody 
+{
+	border-top: 0px;
+}
+
+.tblDealCre .rowGrandTotal, .tblDealCre .rowGrandTotal .form-control
+ {
+ 	background-color: #ff6d43;
+ 	color:white;
+ 	font-weight: bold;
+ }
+ 
+ /* Summary Screen*/
+  .tblDealCre  >  tbody > tr > td.colRightSectionCenter
+ {
+ 	border-bottom: 1px solid black;
+ 	background-color: #fff;
+ 	text-align: center;
+ }
+ 
+  .tblDealCre  >  tbody > tr > td.colRightSectionCenter .form-control
+ {
+ 	color: #ff6d43;
+ 	font-weight: bold;
+ }
+ 
+ .btnTotalWidth
+ {
+ 	width: 100px;
+ }
+ .tdWidth5Per
+  {
+	width: 5%;
+  }
+ .tdWidth8Per
+  {
+	width: 8%;
+  }
+  .tdWidth9Per
+  {
+	width: 9%;
+  }
+  .tdWidth11Per
+  {
+	width: 11%;
+  }
+  .tdbgColor
+  {
+  	background-color: #ff6d43;
+    color: white;
+    font-weight: bold;
+  }
+ /* Summary Screen*/
+  /*********************************************************************/
+ 
+   
+/* DealCreation Page End*/
+
+/*Role Utilization and Rates Start */
+ #tblRoleUtilization.table-condensed > thead > tr > td,
+ #tblRoleUtilization.table-condensed>tbody>tr>td>input[type="text"],
+ #tblRoleUtilization.table-condensed>tbody>tr>td>input[type="text"]:focus {
+ 	background-color:transparent !important;
+ 	border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 2px !important;
+    padding-right: 2px !important; 
+ }
+/*Role Utilization and Rates End */
+
+/* Master Salary Start */
+ #tblAddSalary.table-condensed > thead > tr > td,
+ #tblAddSalary.table-condensed>tbody>tr>th>select,
+ #tblUpdateSalary.table-condensed > thead > tr > td,
+ #tblUpdateSalary.table-condensed>tbody>tr>th>select
+  {
+ 	background-color:transparent !important;
+ 	border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important; 
+ }
+ 
+ 
+/* Master Salary End */
+/* Create Deal Fix Price Start */
+.width4per {
+	width: 4%;
+}
+.width5per {
+	width: 5%;
+}
+.width10per {
+	width: 10%;
+}
+.width11per {
+	width: 11%;
+}
+.width12per {
+	width: 12%;
+}
+.width12-5per {
+	width: 12.5%;
+}
+.width13per {
+	width: 13%;
+}
+.width14per {
+	width: 14%;
+}
+.width15per {
+	width: 15%;
+}
+.width20per {
+	width: 20%;
+}
+.width25per {
+	width: 25%;
+}
+.width38per {
+	width: 38%;
+}
+.width40per {
+	width: 40%;
+}
+.width60per {
+	width: 60%;
+}
+.blackColor
+{
+	color: #000000;
+}
+.bgBlackColor 
+{
+	background-color: #000000 !important;
+	color: #ffffff !important;
+	line-height: 1.42857143% !important;
+	text-align: center;
+}
+.bgBlkColor 
+{
+	background-color: #000000 !important;
+	color: #ffffff !important;
+	line-height: 1.42857143% !important;
+	text-align: left;
+}
+.redColor{
+	color: #e32;
+}
+/* Create Deal Fix Price End*/
+/* topBottom Tab Strat*/
+.topBottomTab
+{
+	display: inline;
+	font-family:Arial;
+	color:Black;
+	background:gray;
+	padding-top:0.8%;
+	width:45px;
+	height:45px;
+	position:fixed;
+	top: 800px;
+	right: 5px;
+	border-top-left-radius:35px;
+	border-top-right-radius:35px;
+	border-bottom-left-radius:35px;
+	border-bottom-right-radius:35px;
+	font-size:18px;
+}
+#topBottom,#top,#bottom:visited {
+    text-decoration: none;
+}
+#bottom:visited {
+    text-decoration: underline;
+}
+#top:visited {
+    text-decoration: underline;
+}
+#bottom:hover {
+    color: #072037;;
+    text-decoration: underline;
+}
+#top:hover {
+    color: #072037;;
+    text-decoration: underline;
+}
+/* topBottom Tab end*/
+.grayBgColor{
+ 	background-color: #C0C8D0 !important;	
+}
+.tableInputColor{
+	background-color: #ffffff !important;
+}
+ #roleUtilizationSubmit
+ {
+ 	color: #e32;
+ 	background-color: #e5e5e5;
+ }
+ /* DashBoard Start*/
+ .radioTopPadding2px
+ {
+	padding-top:2px;
+ }
+ .topPadding9px
+ {
+	padding-top:9px;
+ }
+ /* DashBoard End*/
+ 
+ /*tooltip Start*/
+ .tooltip1 {
+    position: relative;
+     
+ }
+
+.tooltip1 .tooltiptext {
+   
+    width: 200%;
+    background-color: #fff4e6;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    display:none;
+  position:absolute; 
+  z-index:100;
+  bottom:25px; 
+ 
+}
+
+.tooltip1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -45%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff4e6  transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext {
+   display:block;
+    opacity: 9;
+} 
+ /*tooltip End*/
+/*Rate card creation table Start */
+.tblRateCardCre  > thead > tr:first-child  
+  {
+		height: 50px;
+		background-color: #ff6d43;
+  }
+.tblRateCardCre > thead > tr > td,
+.tblRateCardCre > thead > tr > th,
+.tblRateCardCre > tbody > tr > th
+  {
+    border: none;
+    vertical-align: middle;
+  }
+.tblRateCardCre > thead > tr > th.thBorder
+  {
+  	border-right: 1px solid gray !important;
+  	color: white;
+  	font-size: 14px;
+  }
+   .tblRateCardCre  > thead > tr:nth-child(2)
+ {
+ 	background-color: black;
+ 	color: white;
+ 	text-align: center;
+ } 
+ .tlbHeader
+ {
+ 	background-color: #ff6d43 !important;
+ 	color: white;
+ }
+ .tblRateCardCre .btn 
+ {
+ 	padding: 6px 20px;
+ 	border-radius: 20px;
+ } 
+  .tblRateCardCre .btn-default
+  {
+  	border-color: transparent;
+  }
+.tblRateCardCre .btn:active,
+.tblRateCardCre .btn:focus,
+.tblRateCardCre .btn.active 
+{
+	background-image: none;
+  	outline: 0;
+  	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+ .tblRateCardCre > thead > tr > th > a
+  {
+  	color:white;  	
+  	font-size: 16px;
+  	font-weight: bold;
+  	background-color: #ff6d43;  	
+  }
+  .tblRateCardCre> tbody > tr > td.colSection
+ {
+ 	border-right: 1px solid gray;
+ 	border-bottom: 1px solid black !important;
+ }
+  .tblRateCardCre    >  tbody > tr > td.colRightSection
+ {
+ 	border-bottom: 1px solid black;
+ }
+ .tbVeticalAlignCenter {
+      vertical-align: middle !important;
+ }
+/*Rate card creation table End  */
+ 
+ /*FPDealCreationContractualTerms Starts*/
+ .lblPaddingRight5px
+ {
+ 	padding-right: 5px;
+ }
+ /*FPDealCreationContractualTerms End*/
+ 
+ /* RateCardCreationRoleUtilizationAndRates screen Start*/
+ 
+ .tdRoleDesc, .tdSubTotal
+ {
+ 	min-width: 200px;
+ }
+ 
+ .tdCommonRightSec
+ {
+ 	min-width: 55px;
+ }
+ .tdCustRole
+ {
+ 	min-width: 65px; 	
+ }
+ .thSepBackCol
+ {
+ 	background-color: #ff6d43;
+ }
+ .rcRoleDesc
+ {
+ 	min-width: 210px;
+ }
+ .tdminWidth
+ {
+ 	min-width: 54px;
+ 	
+ }
+ #tblRoleUtilization .form-control
+ {
+ 	font-size: 12px !important;
+ }
+ .tdminWidth45px
+ {
+ 	min-width: 45px;
+ 	
+ }
+ 
+ .headerBgColor
+ {
+ 	background-color: dimgrey;
+ }
+ 
+  .tdRightBorder
+ {
+ 	border-right: 1px black solid !important;
+ }
+ 
+ #tblRateCardSummaryPer  >  thead > tr > th.colRightSection
+ {
+ 	background-color: #C0C8D0 !important;
+ 	color: #4d4d4d;
+ }
+ 
+  #tblRateCardSummaryPer  >  tbody > tr > td >span.colmiddleempty
+ {
+ 	margin-left:15px;
+ }
+ 
+ 
+ 
+ #tBodyRoleUtilization .tooltiptext {
+ width: 75% !important;
+ }
+ 
+ /* RateCardCreationRoleUtilizationAndRates screen End*/
+ /* RateCardCreationRoleSelection Start*/
+ .tdCommonDDlWidth
+ {
+ 	min-width: 150px;
+ }
+ .tdClientRolText
+ {
+ 	min-width: 110px;
+ }
+ .tdCommentText
+ {
+ 	min-width: 140px;
+ }
+ .tdMasterRoleCode
+ {
+ 	min-width: 119px;
+ }
+ .tdSyntelRole
+ {
+ 	min-width: 83px;
+ }
+ .margin10px
+ {
+ 	margin-right: 10px;
+ }
+ /* RateCardCreationRoleSelection End*/
+ 
+ /**/
+ #tblAddMasterRoles .thVerticalAlignCenter, #tblUpdateMasterRoles .thVerticalAlignCenter 
+ {
+ 	vertical-align: middle;
+ }
+ /**/
+ 
+ .active
+	{	 	
+		text-decoration: underline !important;		
+		background-color: white !important;
+		color: black !important;
+	}
+	
+/*Master Role Screen Start*/
+.tdAlignCenter
+{
+	text-align: center !important;
+	 margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+.tdAlignCenterper
+{
+	text-align: center !important;
+	 margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+   
+}
+.tdpercAlignCenterper
+{	
+	 margin-left: auto;
+    margin-right: auto;
+    width: 4%;
+   
+}
+.tblRDetails
+{
+	border: none;
+	border: 1px solid black;
+	border-collapse: collapse;	
+}
+
+.tblRDetails td
+{
+	padding: .5em 1em;
+	text-align: left;
+	vertical-align: top;
+	border-left: 1px solid black;	
+}
+.tblRDetails > tbody > tr > td 
+{ 
+	border-bottom: 1px solid black;
+	border-top:1px solid black;
+}
+
+.tblRDetails> tbody> tr:last-child > td {
+	border-bottom: none;
+}
+#modalVDetials .modal-dialog
+{
+	width: 400px;
+}
+
+#modalRCFinalize .modal-dialog
+{
+	width: 800px;
+}
+
+/*Summmary table Sr no height*/
+
+.tdheight3px
+{
+	height: 50px;
+}
+/*Master Role Screen End*/
+/* FPDealCreationCostInputs start*/
+.tdWidthSrNo
+{
+	width: 4%;
+	
+}
+.tdWidthPartiCulars
+{
+	width: 16%
+}
+.tdWidthStage
+{
+	width: 6.4%	
+}
+.tdRgtSec
+{
+	width:6%
+}
+.topBorderBlack
+{
+	border-top: 1px solid black;	
+}
+.colorWhite
+{
+	color: white;
+}
+.tdWidthSrNoFac
+{
+	width:4%
+}
+.tdWidthPartiCularsFac
+{
+	width: 22.2%
+}
+.tdWidthQtyFac, .tdWidthRateFac, .tdWidthMonthsFac, .tdWidthTotalFac 
+{
+	width:15%
+}
+.textAlignLeft
+{
+	text-align: left;
+}
+
+.thYears
+{
+	color: white;
+	font-size: 14px;
+}
+
+.divBackColor 
+{
+	background-color: black;
+}
+
+/* FPDealCreationCostInputs end*/
+/* BootStrap Modal: enable word break */
+.bootstrap-dialog .bootstrap-dialog-message {
+	word-break: break-all; 
+}
+/**/
+.headerBgColorDarkGray
+ {
+ 	background-color: darkgray !important;
+ }
+ 
+ /*RateCardCreationDetails start*/
+ .tdPrem
+ {
+ 	min-width:150px;
+ }
+ .tdFac
+ {
+ min-width: 100px;
+ }
+ .tdCountry
+ {
+ min-width: 130px;
+ }
+ .tdCity
+ {
+ min-width: 200px
+ }
+ .tdCityUtilization 
+ {
+ min-width: 100px
+ }
+ .tdManualRateCardWidth 
+ {
+ min-width: 150px;
+ }
+ /*RateCardCreationDetails end*/
+ /* Master Allowance Screen Start*/
+ .tdVetAlignMiddle
+ {
+ 	vertical-align: middle !important;
+ }
+ 
+ .tdTextAlignLeft
+ {
+ 	text-align: left !important;
+ }
+ 
+ .textAlignCenter
+ {
+ 	text-align: center !important;
+ }
+ .tdTextAlignRight
+ {
+ 	text-align: right !important;
+ }
+ /* Master Allowance Screen End*/
+ 
+ /* Master City Screen Start*/
+ .tdWidthCityView
+ {
+ 	width:25%;
+ }
+  
+ /* Master City Screen End*/
+ .tdManualRateCardWidth 
+ {
+ min-width: 150px;
+ }
+ /*RateCardCreationDetails end*/
+ 
+  /* MyDashboard Screen Start*/
+   .rcTdNum
+ {
+ text-align: right !important;
+ }
+ 
+   .rcTdNumCenter
+ {
+ text-align: center!important;
+ }
+   .rcTdNumMiddel
+ {
+ text-align: right!important;
+ vertical-align: middle !important;
+ }
+ 
+  .rcTdText
+ {
+ text-align: left !important;
+ }
+ 
+ .rcTdTextRight
+ {
+ text-align: right !important;
+ }
+ 
+ .rcTdTextCenter
+ {
+ text-align: center !important;
+ }
+ .rcTdTextMiddel
+ {
+ text-align: left!important;
+ vertical-align: middle !important;
+ }
+ .rcTdTextMiddelRight
+ {
+ text-align: right!important;
+ vertical-align: middle !important;
+ }
+ .rcIdTd
+ {
+ cursor: pointer;
+ text-align: right !important;
+ }
+
+.rcIdTdMiddelCenter
+ {
+ cursor: pointer;
+ text-align: center !important;
+ vertical-align: middle !important;
+ }
+ 
+ .rcTextWidth
+ {
+ width:10px;
+ }
+  /* MyDashboard Screen End*/
+  
+  .boldCondition
+  {
+  font-weight: 900;
+  }
+  
+  .costTextField
+ {
+     background-color: white;
+ 	font-size: 12px;
+ 	height: 22px;
+ 	width: 30px;
+ 	text-align: center;
+ 	color: black;
+ }
+ .white-space-pre-line {
+  white-space: pre;
+  width:50px
+}
+
+.RCFinalized > tbody > tr > td
+{
+  	border: 1px solid black !important;
+	text-align: left;
+}
+.table.RCFinalized > thead > tr > th{
+	border-bottom: 0px !important;
+
+	}
+}

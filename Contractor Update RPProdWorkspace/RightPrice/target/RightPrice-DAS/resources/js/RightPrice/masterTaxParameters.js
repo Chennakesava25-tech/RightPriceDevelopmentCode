@@ -1,0 +1,322 @@
+//var app = angular.module('RightPrice', ['ngMessages']);
+		app.controller("MasterTaxParametersController", [
+			'$scope','$location','$anchorScroll','$http','$window','WebServiceFactory',
+			function($scope, $location, $anchorScroll, $http, $window,WebServiceFactory, $index) {
+			 $scope.ViewCommonCostParametersHidden = true;
+			 $scope.AddCommonCostParameterHidden = true;
+			 $scope.UpdateCommonCostParameterHidden = true;
+			 $scope.UploadCommonCostParametersHidden = true;
+			 $scope.isSelected = false;
+			 $scope.onViewSearch = false;
+			 $scope.onSaveSearch = false;
+			 $scope.onAddSave = false;
+			 $scope.onUpdateSearch = false;
+			 $scope.onUpdateClick = false;
+			 $scope.isUpdate = true;
+			 $scope.downloadBtn = true;
+			 $scope.visaTypeDetails =[];
+			 $scope.arrTaxParam = [];
+			 
+			 var contextPath = "/RightPrice-DAS";
+             $scope.ShowHideViewCommonCostParameters = function () {
+                $scope.ViewCommonCostParametersHidden = $scope.ViewCommonCostParametersHidden ? false : true ;
+             };
+             $scope.ShowHideAddCommonCostParameter = function () {
+                $scope.AddCommonCostParameterHidden = $scope.AddCommonCostParameterHidden ? false : true;
+             };
+             $scope.ShowHideUpdateCommonCostParameter = function () {
+                $scope.UpdateCommonCostParameterHidden = $scope.UpdateCommonCostParameterHidden ? false : true;
+             };
+             $scope.ShowHideUploadCommonCostParameters = function () {
+                $scope.UploadCommonCostParametersHidden = $scope.UploadCommonCostParametersHidden ? false : true;
+             };
+			 $scope.moveTop = function(){
+					$location.hash('PageHeading'); 
+					$anchorScroll();
+			 };
+			 $scope.moveBottom = function(){
+					$location.hash('includedFooter'); 
+					$anchorScroll();
+			 };     
+			 var getCountryDetail = function(response) {
+				 	console.log("Country");
+				 	console.log(response.data);
+					$scope.country = response.data;
+			 };
+			WebServiceFactory.getCountryDetail().then(getCountryDetail);
+			
+			var getTaxParamList = function(response) {
+				console.log("getParamList");
+			 	console.log(response.data);
+				$scope.parameter = response.data;
+			}
+			WebServiceFactory.getTaxParamList().then(getTaxParamList);
+			
+			var currentYr = new Date().getFullYear();
+		    var range = [];
+		    range.push((currentYr-1)+"-"+(currentYr));
+		    for (var i = 0; i < 4; i++) {
+		    	range.push((currentYr + i)+"-"+(currentYr + i + 1));
+		    }
+		    $scope.years = range;
+		    
+		    $scope.getVisaTypes = function(countryId)
+			{
+				var getVisaTypesbyCountry = function(response) 
+				{
+				 	console.log("Visa type");
+				 	console.log(response.data);
+					$scope.visaTypeDetails = response.data;
+				};
+				WebServiceFactory.getVisaTypes(countryId).then(getVisaTypesbyCountry);	
+			}
+			 
+		    
+		    
+		    $scope.onTaxViewParameterForm = function(isValid){
+		    	$scope.onViewSearch = true;
+		    	if(isValid){
+		    	$scope.downloadBtn = false;
+		    	var markers = {
+						"countryId": $scope.viewParameterForm.countryModel,
+						"year":($scope.viewParameterForm.ddlSearchYearModel).split('-')[0]
+				};
+		    	console.log(markers);
+				var onTaxViewParameterForm = function(response) {
+					console.log("response.data-----------");
+					console.log(response.data);
+					
+					if(response.data != ""){
+						$scope.commonCostDataTempArray = [];
+					 	$scope.commonCostParamViewArray = response.data.commonCostDescData;
+					 	console.log("The Tax Param View Array is..................  ");
+					 	console.log($scope.commonCostParamViewArray);
+					 	$scope.commonCostData  =  response.data.commonCostData;
+					 	console.log("The Tax Data Array is................ ");
+					 	console.log($scope.commonCostData);
+					 	
+					 	angular.forEach($scope.commonCostParamViewArray, function(value1, key1) {
+					 		angular.forEach($scope.commonCostData, function(value2, key2) {
+					 			console.log("$scope.commonCostData[key2][5]--"+$scope.commonCostData[key2][5]);
+					 			if($scope.commonCostData[key2][5] == 1 && $scope.commonCostParamViewArray[key1].codeName == $scope.commonCostData[key2][1]){
+					 				$scope.commonCostParamViewArray[key1].domestic = $scope.commonCostData[key2][3];
+					 				var num = parseFloat($scope.commonCostParamViewArray[key1].domestic);						    
+								    var domesticAll = num.toFixed(2);
+								    $scope.commonCostParamViewArray[key1].domestic =domesticAll;
+					 				console.log("domestic --- "+$scope.commonCostParamViewArray[key1].domestic);
+					 			}
+					 			else if($scope.commonCostData[key2][5] == 2 && $scope.commonCostParamViewArray[key1].codeName == $scope.commonCostData[key2][1]){
+					 				$scope.commonCostParamViewArray[key1].deputed = $scope.commonCostData[key2][3];
+					 				var num = parseFloat($scope.commonCostParamViewArray[key1].deputed);						    
+								    var deputedAll = num.toFixed(2);
+								    $scope.commonCostParamViewArray[key1].deputed =deputedAll;
+					 				console.log("deputed --- "+$scope.commonCostParamViewArray[key1].deputed);
+					 			}
+					 			else if($scope.commonCostData[key2][5] == 3 && $scope.commonCostParamViewArray[key1].codeName == $scope.commonCostData[key2][1]){
+					 				$scope.commonCostParamViewArray[key1].shortTerm = $scope.commonCostData[key2][3];
+					 				var num = parseFloat($scope.commonCostParamViewArray[key1].shortTerm);						    
+								    var shortTermAll = num.toFixed(2);
+								    $scope.commonCostParamViewArray[key1].shortTerm =shortTermAll;
+					 				console.log("Short term --- "+$scope.commonCostParamViewArray[key1].shortTerm);
+					 			}
+					 			else if($scope.commonCostData[key2][5] == 4 && $scope.commonCostParamViewArray[key1].codeName == $scope.commonCostData[key2][1]){
+					 				$scope.commonCostParamViewArray[key1].offshore = $scope.commonCostData[key2][3];
+					 				var num = parseFloat($scope.commonCostParamViewArray[key1].offshore);						    
+								    var offshoreAll = num.toFixed(2);
+								    $scope.commonCostParamViewArray[key1].offshore =offshoreAll;
+					 				console.log("offshore --- "+$scope.commonCostParamViewArray[key1].offshore);
+					 			}
+					 		});
+					 	});
+					}else{
+						$scope.commonCostParamViewArray = [];
+						$scope.downloadBtn = false;
+						BootstrapDialog.show({
+		    	        	title : 'Master - Tax Parameters',
+		    	        	type : BootstrapDialog.TYPE_PRIMARY,
+		    	        	message : ' Tax Parameters for the selected Country and Year does not exists.',
+		    	        	closable : false,
+		    	        	buttons : [{
+		    	        		label : 'OK',
+		    	        		action : function(dialogRef) {
+		    	        			dialogRef.close();
+//		    	        			$window.location.reload();
+		    	        		}
+		    	        	}]
+		    	        });
+					}
+				}
+			    WebServiceFactory.onTaxViewParameterForm(markers).then(onTaxViewParameterForm);
+		    	}
+		    };
+		    
+		    $scope.onAddTPSearch = function(isValid){
+		    	$scope.onSaveSearch = true;
+		    	if(isValid){
+				var cntryId = $scope.addParameterForm.countryModel;
+				var paramId = $scope.addParameterForm.addParamName;
+				var year = ($scope.addParameterForm.addCCPYear).split('-')[0];
+				if(cntryId != undefined && paramId != undefined ){
+					var markers = {
+							"countryId": cntryId,
+							"deductionTypeId": paramId,
+							"year":year
+					};
+					var onAddTPSearch = function(response) {
+						//$scope.onViewSearch = false;
+						if(response.data == "AlreadyAdded"){
+							$scope.answer = 'Data has already been added.';
+			    	        BootstrapDialog.show({
+			    	        	title : 'Master - Tax Parameters',
+			    	        	type : BootstrapDialog.TYPE_PRIMARY,
+			    	        	message : 'Tax Parameters for the selected Country, Parameter and Year already exists.',
+			    	        	closable : false,
+			    	        	buttons : [{
+			    	        		label : 'OK',
+			    	        		action : function(dialogRef) {
+			    	        			dialogRef.close();
+//			    	        			$window.location.reload();
+			    	        		}
+			    	        	}]
+			    	        });
+						}else{
+							$scope.addCommonCostParameterArray=[];
+							$scope.addCommonCostParameterArray.push({});
+						}
+					}
+				    WebServiceFactory.onAddTPSearch(markers).then(onAddTPSearch);
+				}
+		    	}
+			};
+			
+			$scope.GetValue = function (visaTypeDetails) {
+                var visaTypeId = $scope.updateParameterForm.visaTypeModel;
+                var visaTypeName = $.grep($scope.visaTypeDetails, function (visaTypeDetails) {
+                    return visaTypeDetails.visaTypeId == visaTypeId;
+                })[0].visaLabel;
+                
+                $scope.visaTypeName = visaTypeName;
+            }
+		
+			$scope.onUpdateTPSearch = function(isValid){
+				
+				$scope.onUpdateSearch = true;
+		    	if(isValid)
+		    	{
+		    		$scope.isUpdate = false;
+		    		var cntryId = $scope.updateParameterForm.updateCountryModel;
+		    		var visaTypeId = $scope.updateParameterForm.visaTypeModel;
+		    		var year = ($scope.updateParameterForm.updateCCPYear).split('-')[0];
+		    		
+		    		var getArrTaxParam = function(response) 
+					{
+		    			if(response.status == 200)
+						{
+							$scope.arrTaxParam = response.data;
+							for(i=0;i<response.data.length;i++)
+							{
+								var num = parseFloat(response.data[i].parDeduction);						    
+							    var parDeduction = num.toFixed(2);
+							    $scope.arrTaxParam[i].parDeduction = parDeduction;
+							}
+							console.log("$scope.arrTaxParam");
+							console.log($scope.arrTaxParam);
+						}
+						else
+						{
+							$scope.arrTaxParam = [];
+							BootstrapDialog.show({
+			    	        	title : 'Master - Tax Parameters',
+			    	        	type : BootstrapDialog.TYPE_PRIMARY,
+			    	        	message : 'Tax Parameters for the selected Country, Visa Type and Year does not exists.',
+			    	        	closable : false,
+			    	        	buttons : [{
+			    	        		label : 'OK',
+			    	        		action : function(dialogRef) {
+			    	        			dialogRef.close();
+			    	        		}
+			    	        	}]
+			    	        });
+						}		    			
+					};
+					WebServiceFactory.onUpdateTPSearch(cntryId,visaTypeId,year).then(getArrTaxParam);
+		    	}
+			}
+			
+			
+			$scope.updateData = function(isValid){
+				$scope.onUpdateClick = true;
+				if(isValid){
+					$scope.updateTaxParameter();
+				}
+			};
+			
+			$scope.updateTaxParameter = function(){
+				var markers = [];
+				for(var i=0;i<$scope.arrTaxParam.length;i++){
+					
+					markers.push({ 	
+						"countryId": $scope.updateParameterForm.updateCountryModel,
+						"year":($scope.updateParameterForm.updateCCPYear).split('-')[0],
+						"visaTypeId": $scope.updateParameterForm.visaTypeModel,
+						"deductionTypeId":$scope.arrTaxParam[i].deductionTypeId,
+						"parDeduction":$scope.arrTaxParam[i].parDeduction,
+						"isActive":1
+					});
+				}
+				var updateTaxParameter = function(response) 
+				{
+					console.log(response);
+					if(response.status == 200) 
+					{
+						BootstrapDialog.show({
+							title : 'Master - Tax Parameters',
+							type : BootstrapDialog.TYPE_PRIMARY,
+							message : 'Tax Parameters updated successfully.',
+							closable : false,
+							buttons : [{
+								label : 'OK',
+								action : function(dialogRef) {
+									dialogRef.close();
+									window.location = "MasterTaxParameters";
+								}
+							}]
+						});
+					}
+					else 
+					{
+						BootstrapDialog.show({
+						title : 'Master - Tax Parameters',
+						type : BootstrapDialog.TYPE_DANGER,
+						message : "Currently We are facing technical issues, please try again later.",
+						closable : false,
+						buttons : [ {
+							label : 'OK',
+							action : function(dialogRef) {
+								dialogRef.close();
+								window.location = "MasterTaxParameters";
+								}
+							} ]
+						});
+					}
+		   	   }
+				WebServiceFactory.updateTaxParam(markers).then(updateTaxParameter);
+			};
+			
+			
+			$scope.getMasterTaxExcel = function() {
+				var cntryId = $scope.viewParameterForm.countryModel;
+				var year = ($scope.viewParameterForm.ddlSearchYearModel).split('-')[0];
+				
+				window.location= contextPath+"/RightPrice-DAS/downloadMasterTaxExcel/"+cntryId+"/"+year
+			};
+			
+			$scope.onCancelClickUpdate = function(){
+				$scope.isSelected = false;
+				$scope.updateParameterForm.updateCountryModel = null;
+				$scope.updateParameterForm.updateCCPYear = null;
+				$scope.updateParameterForm.visaTypeModel = null;
+				$scope.arrTaxParam = [];
+			}
+		    
+		}]);
